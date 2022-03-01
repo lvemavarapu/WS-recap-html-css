@@ -1,0 +1,36 @@
+@import "variables";
+
+@mixin image{
+    width:600px;
+    height:600px;
+    border: 2px solid green;
+    &:hover{
+        box-shadow: 2px,2px, 4px brown;
+    }
+}
+body{
+    background-color:$bkgnd-color;
+    margin-left:10px;
+}
+img{
+    @include image();
+    display:block;
+    animation: images 6s;
+    animation-fill-mode:forwards;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes images{
+    0%{margin-left:20px;}
+    50%{margin-left:45%}
+    100%{margin-right: 0;}
+}
+footer {
+    p{
+        bottom:0;
+        margin-left: 45%;
+        color:purple;
+    }
+}
