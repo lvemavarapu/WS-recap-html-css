@@ -1,0 +1,38 @@
+body {
+  background-color: #eb7f58;
+  margin-left: 10px;
+}
+
+img {
+  width: 600px;
+  height: 600px;
+  border: 2px solid green;
+  display: block;
+  animation: images 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+img:hover {
+  box-shadow: 2px, 2px, 4px brown;
+}
+
+@keyframes images {
+  0% {
+    margin-left: 20px;
+  }
+  50% {
+    margin-left: 45%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+footer p {
+  bottom: 0;
+  margin-left: 45%;
+  color: purple;
+}
+
+/*# sourceMappingURL=about.css.map */
